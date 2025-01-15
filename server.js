@@ -4,6 +4,8 @@ import { countries } from 'countries-list';
 
 const app = express();
 const PORT = 5000;
+const cors = require('cors');
+app.use(cors());
 
 // Endpoint to fetch all countries
 app.get('/api/countries', (req, res) => {
